@@ -278,18 +278,18 @@ h4.title-decor {
   margin-block: 20px clamp(10px, 2.666vw, 20px);
 }
 
-.art__gallery {
+.art_gallery {
   display: grid;
   gap: 10px;
 }
 
-.art__img {
+.art_img {
   object-fit: cover;
   inline-size: 100%;
 }
 
 @media (min-width: 768px) {
-  .art__gallery {
+  .art_gallery {
     grid-template-columns: repeat(3, auto);
     grid-template-areas:
       "sunset sunset ice-cream"
@@ -300,38 +300,38 @@ h4.title-decor {
     max-block-size: calc(100vw + 23px);
   }
 
-  .art__img {
+  .art_img {
     object-fit: cover;
     block-size: 100%;
   }
 
-  .art__img__sunset {
+  .img_sunset {
     grid-area: sunset;
   }
 
-  .art__img__ice-cream {
+  .img_ice-cream {
     grid-area: ice-cream;
   }
 
-  .art__img__books {
+  .img_books {
     grid-area: books;
   }
 
-  .art__img__tape {
+  .img_tape {
     grid-area: tape;
   }
 
-  .art__img__street {
+  .img_street {
     grid-area: street;
   }
 }
 
 @media (min-width: 1024px) {
-  .art__img__tape {
+  .img_tape {
     max-block-size: calc(100% - 5px);
   }
 
-  .art__img__street {
+  .img_street {
     align-self: start;
     padding-block-start: 5px;
     max-block-size: calc(100% - 5px);
