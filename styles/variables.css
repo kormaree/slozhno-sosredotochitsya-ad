@@ -1,11 +1,13 @@
 
 :root {
-    --backgroung-image: url(../images/cover-image-light.png);
-    --title-color: #FFC2E6;
-    --text-color: #353430;
-    --sub-text-color: #353430;
-    --accent-color: #ff8dcb;
-    --btn-color: #353430;
+  --font: 'IBM Plex mono';
+  --font-size: 18px;
+  --backgroung-image: url(../images/cover-image-light.png);
+  --title-color: #FFC2E6;
+  --text-color: #353430;
+  --sub-text-color: #353430;
+  --accent-color: #ff8dcb;
+  --btn-color: #353430;
 }
 
 
