@@ -1,13 +1,12 @@
 :root .theme_dark {
-  --text-color: rgba(241, 178, 206, 1);
-  --background: rgba(0, 0, 40, 1) url("../images/cover-image-dark.png")
-    no-repeat center / cover;
-  --accent-color: rgba(255, 0, 112, 1);
-  --accent-color-btn: rgba(255, 0, 112, 1);
-  --text-color-accent: rgba(219, 0, 255, 1);
-  --bg-color: rgba(0, 0, 40, 1);
-  --accent-color-title: rgba(255, 0, 112, 1);
+  --text-color: #F1B2CE;
+  --background: #000028 url("../images/cover-image-dark.png") no-repeat center / cover;
+  --accent-color: #FF0070;
+  --accent-color-btn: #FF0070;
+  --text-color-accent: #DB00FF;
+  --bg-color: #000028;
+  --accent-color-title: #FF0070;
   --display-header-decor: inline-flex;
-  --color-: rgba(255, 0, 112, 1);
+  --color-: #FF0070;
   --accent-color-opasity: rgba(255, 0, 112, 0.4);
 }
