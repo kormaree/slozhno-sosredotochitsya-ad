@@ -11,8 +11,6 @@
   max-inline-size: 1024px;
 }
 
-/*HEADER*/
-
 .header {
   display: grid;
   grid-template-rows: 1fr auto 1fr;
@@ -46,14 +44,14 @@
   cursor: pointer;
 }
 
-.header__title {
+.header_title {
   color: var(--text-color-accent);
   font-size: var(--logo-size_mobile);
   line-height: 96px;
   text-shadow: 4px 4px 0 var(--accent-color);
 }
 
-.header__subtitle {
+.header_subtitle {
   grid-column: 1/2;
   grid-row: 3/4;
   justify-self: end;
@@ -104,14 +102,14 @@
   aspect-ratio: 1/1;
 }
 
-.header__decor {
+.header_rec {
   position: absolute;
   display: var(--display-header-decor);
   justify-self: end;
   color: var(--accent-color-btn);
 }
 
-.header__decor::before {
+.header_rec::before {
   content: "REC";
   align-content: center;
   padding-inline: 2px;
@@ -120,7 +118,7 @@
   text-transform: uppercase;
 }
 
-.header__decor::after {
+.header_rec::after {
   content: "";
   margin: 9px;
   border-radius: 50%;
@@ -131,22 +129,22 @@
 }
 
 @media (min-width: 768px) {
-  .header__title {
+  .header_title {
     position: relative;
     margin-inline-start: -20px;
     font-size: var(--logo-size_desktop);
   }
-  .header__subtitle {
+  .header_subtitle {
     line-height: 23.4px;
   }
 }
 
 @media (min-width: 1024px) {
-  .header__title {
+  .header_title {
     line-height: 130px;
   }
 
-  .header__subtitle {
+  .header_subtitle {
     line-height: 23.7px;
   }
 
@@ -160,8 +158,6 @@
     gap: 10px;
   }
 }
-
-/*HEADER UI KIT*/
 
 .header__theme-menu-button:hover {
   border: var(--accent-color-opasity) 1px solid;
@@ -183,8 +179,6 @@
   pointer-events: none;
 }
 
-/*CONTENT*/
-
 .content {
   margin-inline: min(2.666vw, 20px);
 }
@@ -193,7 +187,7 @@
   margin-block: clamp(40px, 20px + 5.25vw, 60px) clamp(50px, 21px + 7.7vw, 80px);
 }
 
-.section-title {
+.info-container-title {
   color: var(--color-section-title);
   font-size: 18px;
   line-height: 23.4px;
@@ -263,8 +257,6 @@ h4.title-decor {
   }
 }
 
-/*CONTENT UI KIT*/
-
 .links:hover {
   border-block-end: var(--text-color) solid 1.5px;
   transition-duration: 0.2s;
@@ -277,8 +269,6 @@ h4.title-decor {
 .links:focus-visible {
   outline: currentColor solid 1.2px;
 }
-
-/*GALERY*/
 
 .section-gallery {
   margin-block-end: clamp(40px, 20px + 5.25vw, 60px);
@@ -347,8 +337,6 @@ h4.title-decor {
     max-block-size: calc(100% - 5px);
   }
 }
-
-/*FOOTER*/
 
 .footer {
   display: grid;
