@@ -33,7 +33,7 @@
     text-shadow: 4px 4px 0 var(--accent-color-title);
   }
 
-  .footer__title {
+  .footer_title {
     text-shadow: 2px 2px 0 var(--accent-color-title);
   }
 }

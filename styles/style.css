@@ -358,7 +358,7 @@ h4.title-decor {
   min-block-size: 668px;
 }
 
-.footer__title {
+.footer_title {
   justify-self: center;
   color: var(--text-color-accent);
   font-size:  var(--logo-size_mobile);
@@ -367,7 +367,7 @@ h4.title-decor {
 }
 
 @media (min-width: 768px) {
-  .footer__title {
+  .footer_title {
     font-size: var(--logo-size_desktop);
   }
 }
