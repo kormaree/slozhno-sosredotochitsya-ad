@@ -187,7 +187,7 @@
   margin-block: clamp(40px, 20px + 5.25vw, 60px) clamp(50px, 21px + 7.7vw, 80px);
 }
 
-.info-container-title {
+.section-title {
   color: var(--color-section-title);
   font-size: 18px;
   line-height: 23.4px;
