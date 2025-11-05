@@ -1,50 +1,48 @@
-(function initTheme() {
-  const theme = localStorage.getItem('theme');
-  if (theme) {
-    setTheme(theme);
-  } else {
-    setTheme('dark');
-  }
-})();
+const themeButtons = document.querySelectorAll('.header__theme-menu-button');
 
-document.addEventListener('DOMContentLoaded', () => {
-  const currentTheme = [...document.body.classList]
-    .find((cn) => cn.startsWith('theme_'))
-    ?.replace('theme_', '');
-  
-  const themeButtons = [
-    ...document.querySelectorAll('.header__theme-menu-button'),
-  ];
-  
-  setActiveButton(themeButtons, currentTheme);
-
-  themeButtons.forEach((button, index) => {
-    button.addEventListener('click', () => {
-      const themes = ['light', 'auto', 'dark'];
-      const chosenTheme = themes[index];
-      setTheme(chosenTheme);
-      setActiveButton(themeButtons, chosenTheme);
+themeButtons.forEach((button) => {
+  button.addEventListener('click', () => {
+    themeButtons.forEach((btn) => {
+      btn.classList.remove('header__theme-menu-button_active');
+      btn.removeAttribute('disabled');
     });
+    if (
+      [...button.classList].includes('header__theme-menu-button_type_light')
+    ) {
+      changeTheme('light');
+    } else if (
+      [...button.classList].includes('header__theme-menu-button_type_dark')
+    ) {
+      changeTheme('dark');
+    } else {
+      changeTheme('auto');
+    }
+    button.classList.add('header__theme-menu-button_active');
+    button.setAttribute('disabled', true);
   });
 });
 
-function setTheme(theme) {
-  document.body.classList.remove('theme_light', 'theme_auto', 'theme_dark');
+function changeTheme(theme) {
+  document.body.className = 'page';
   document.body.classList.add(`theme_${theme}`);
   localStorage.setItem('theme', theme);
 }
 
-function setActiveButton(buttonsArray, theme) {
-  buttonsArray.forEach((button) => {
-    button.classList.remove('header__theme-menu-button_active');
-    button.removeAttribute('disabled');
-  });
-  
-  const themes = ['light', 'auto', 'dark'];
-  const buttonIndex = themes.indexOf(theme);
-  
-  if (buttonIndex !== -1 && buttonsArray[buttonIndex]) {
-    buttonsArray[buttonIndex].classList.add('header__theme-menu-button_active');
-    buttonsArray[buttonIndex].setAttribute('disabled', true);
+function initTheme() {
+  const theme = localStorage.getItem('theme');
+  if (theme) {
+    changeTheme(theme);
+    themeButtons.forEach((btn) => {
+      btn.classList.remove('header__theme-menu-button_active');
+      btn.removeAttribute('disabled');
+    });
+    document
+      .querySelector(`.header__theme-menu-button_type_${theme}`)
+      .classList.add('header__theme-menu-button_active');
+    document
+      .querySelector(`.header__theme-menu-button_type_${theme}`)
+      .setAttribute('disabled', true);
   }
 }
+
+initTheme();

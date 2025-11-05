@@ -1,16 +1,65 @@
+/*
+  Специально для тёмной темы при наличии класса,
+  здесь окажутся стили, которые нужно переопределить принудительно,
+  переключая тему
+*/
+
 .page.theme_dark {
-  --title-color: #DB00FF;
-  --text-color: #F1B2CE;
-  --sub-text-color: #000028;
-  --accent-color: #ff0070;
-  --btn-color:#ff0070;
-  --backgroung-image: url(../images/cover-image-dark.png);
+  /* сохраните этот селектор в приведённом виде.
+      Так стили написанные ниже будут иметь больший вес,
+      чем стили в медиазапросе предпочтений пользователя
+    */
+  background: url('/images/cover-image-dark.png'), var(--background-main-color);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
 }
 
-.theme_dark .decorative__element {
-  display: flex;
+.theme_dark {
+  --background-main-color: #000028;
+  --background-second-color: #FF0070;
+  --title-color-effect: #DB00FF;
+  --title-color-sub-effect: #FF0070;
+  --decorate-color: #FF0070;
+  --text-menu-color: #FF0070;
+  --text-title-color: #FF0070;
+  --text-description-color: #000028;
+  --text-subtitle-color: #000028;
+  --text-main-color: #F1B2CE;
+  --hover-color: #FF0070;
+  --camera-point-color: #FF0070;
+  --footer-title-sub-low-effect: #FF0070;
 }
 
-.theme_dark .header__theme-menu-button:hover {
-  border: 1px solid rgba(255, 0, 112, 0.40);
+@media (prefers-color-scheme: dark) {
+  .page.theme_auto {
+    background: url('/images/cover-image-dark.png'), var(--background-main-color);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .theme_auto {
+    --background-main-color: #000028;
+    --background-second-color: #FF0070;
+    --title-color-effect: #DB00FF;
+    --title-color-sub-effect: #FF0070;
+    --decorate-color: #FF0070;
+    --text-menu-color: #FF0070;
+    --text-title-color: #FF0070;
+    --text-description-color: #000028;
+    --text-subtitle-color: #000028;
+    --text-main-color: #F1B2CE;
+    --hover-color: #FF0070;
+    --camera-point-color: #FF0070;
+    --footer-title-sub-low-effect: #FF0070;
+  }
+
+  .header_rec_point {
+    display: block;
+  }
+
+  .theme_light>.header>.header_rec_point {
+    display: none;
+  }
 }
