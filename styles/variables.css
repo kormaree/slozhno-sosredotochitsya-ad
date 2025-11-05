@@ -1,17 +1,16 @@
-
 :root {
-  --background-main-color: #FFF1F7;
-  --background-second-color: #FF8DCB;
-  --title-color-effect: #FFC2E6;
-  --title-color-sub-effect: #FF0070;
-  --text-menu-color: #353430;
-  --text-title-color: #353430;
-  --text-description-color: #353430;
-  --text-main-color: #353430;
-  --hover-color: #353430;
-  --main-font-family: "IBM Plex Mono", 'monospace';
-  --footer-title-sub-low-effect: #FF8DCB;
-  --decorate-color: #353430;
-  --text-subtitle-color: #353430;
+  --text-color: rgba(241, 178, 206, 1);
+  --main-font: "IBM Plex mono", monospace;
+  --background: rgba(0, 0, 40, 1) url("../images/cover-image-dark.png")
+    no-repeat center / cover;
+  --accent-color: rgba(255, 0, 112, 1);
+  --accent-color-btn: rgba(255, 0, 112, 1);
+  --text-color-accent: rgba(219, 0, 255, 1);
+  --bg-color: rgba(0, 0, 40, 1);
+  --accent-color-title: rgba(255, 0, 112, 1);
+  --display-header-decor: inline-flex;
+  --color-section-title: rgba(255, 0, 112, 1);
+  --accent-color-opasity: rgba(255, 0, 112, 0.4);
+  --logo-size_mobile: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  --logo-size_desktop: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
 }
-
