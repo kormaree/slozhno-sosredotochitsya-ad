@@ -1,27 +1,29 @@
 :root .theme_light {
-  --text-color: #353430;
-  --background: #FFF1F7 url("../images/cover-image-light.png") no-repeat center / cover;
-  --accent-color: #FF0070;
-  --accent-color-btn: #353430;
-  --text-color-accent: #FFC2E6;
-  --bg-color: #353430;
-  --accent-color-title: #FF8DCB;
+  --text-color: rgba(53, 52, 48, 1);
+  --background: rgba(255, 241, 247, 1) url("../images/cover-image-light.png")
+    no-repeat center / cover;
+  --accent-color: rgba(255, 0, 112, 1);
+  --accent-color-btn: rgba(53, 52, 48, 1);
+  --text-color-accent: rgba(255, 194, 230, 1);
+  --bg-color: rgba(53, 52, 48, 1);
+  --accent-color-title: rgba(255, 141, 203, 1);
   --display-header-decor: none;
-  --color-section-title: #353430;
+  --color-section-title: rgba(53, 52, 48, 1);
   --accent-color-opasity: rgba(53, 52, 48, 0.4);
 }
 
 @media (prefers-color-scheme: light) {
   :root {
-    --text-color: #353430;
-    --background: #FFF1F7 url("../images/cover-image-light.png") no-repeat center / cover;
-    --accent-color: #FF0070;
-    --accent-color-btn: #353430;
-    --text-color-accent: #FFC2E6;
-    --bg-color: #353430;
-    --accent-color-title: #FF8DCB;
+    --text-color: rgba(53, 52, 48, 1);
+    --background: rgba(255, 241, 247, 1) url("../images/cover-image-light.png")
+      no-repeat center / cover;
+    --accent-color: rgba(255, 0, 112, 1);
+    --accent-color-btn: rgba(53, 52, 48, 1);
+    --text-color-accent: rgba(255, 194, 230, 1);
+    --bg-color: rgba(53, 52, 48, 1);
+    --accent-color-title: rgba(255, 141, 203, 1);
     --display-header-decor: none;
-    --color-section-title: #353430;
+    --color-section-title: rgba(53, 52, 48, 1);
     --accent-color-opasity: rgba(53, 52, 48, 0.4);
   }
 }
