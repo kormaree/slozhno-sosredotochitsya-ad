@@ -105,13 +105,12 @@
 }
 
 .page {
-  /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
   display: flex;
   flex-direction: column;
   align-items: center;
   font-family: var(--main-font-family);
   font-weight: 700;
-  background-attachment: fixed
+  background-attachment: fixed;
 }
 
 .header {
