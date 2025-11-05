@@ -44,14 +44,14 @@
   cursor: pointer;
 }
 
-.header__title {
+.header_title {
   color: var(--text-color-accent);
   font-size: var(--logo-size_mobile);
   line-height: 96px;
   text-shadow: 4px 4px 0 var(--accent-color);
 }
 
-.header__subtitle {
+.header_subtitle {
   grid-column: 1/2;
   grid-row: 3/4;
   justify-self: end;
@@ -102,14 +102,14 @@
   aspect-ratio: 1/1;
 }
 
-.header__decor {
+.header_rec {
   position: absolute;
   display: var(--display-header-decor);
   justify-self: end;
   color: var(--accent-color-btn);
 }
 
-.header__decor::before {
+.header_rec::before {
   content: "REC";
   align-content: center;
   padding-inline: 2px;
@@ -118,7 +118,7 @@
   text-transform: uppercase;
 }
 
-.header__decor::after {
+.header_rec::after {
   content: "";
   margin: 9px;
   border-radius: 50%;
@@ -129,22 +129,22 @@
 }
 
 @media (min-width: 768px) {
-  .header__title {
+  .header_title {
     position: relative;
     margin-inline-start: -20px;
     font-size: var(--logo-size_desktop);
   }
-  .header__subtitle {
+  .header_subtitle {
     line-height: 23.4px;
   }
 }
 
 @media (min-width: 1024px) {
-  .header__title {
+  .header_title {
     line-height: 130px;
   }
 
-  .header__subtitle {
+  .header_subtitle {
     line-height: 23.7px;
   }
 
@@ -205,12 +205,12 @@
   line-height: 23.4px;
 }
 
-.what__title {
+.what_title {
   max-width: clamp(236px, 468.5504px + -30.2799vw, 355px);
   margin-block-end: 20px;
 }
 
-.how__title {
+.how_title {
   margin-block: max(0px, calc(41px - 5.333vw)) 0px;
 }
 
@@ -248,11 +248,11 @@ h4.title-decor {
     grid-auto-flow: column;
   }
 
-  .what__title {
+  .what_title {
     max-inline-size: 315px;
   }
 
-  .what__content.section-content {
+  .what_content.section-content {
     grid-template-columns: repeat(3, 1fr);
   }
 }
@@ -278,18 +278,18 @@ h4.title-decor {
   margin-block: 20px clamp(10px, 2.666vw, 20px);
 }
 
-.art__gallery {
+.art_gallery {
   display: grid;
   gap: 10px;
 }
 
-.art__img {
+.art_img {
   object-fit: cover;
   inline-size: 100%;
 }
 
 @media (min-width: 768px) {
-  .art__gallery {
+  .art_gallery {
     grid-template-columns: repeat(3, auto);
     grid-template-areas:
       "sunset sunset ice-cream"
@@ -300,38 +300,38 @@ h4.title-decor {
     max-block-size: calc(100vw + 23px);
   }
 
-  .art__img {
+  .art_img {
     object-fit: cover;
     block-size: 100%;
   }
 
-  .art__img__sunset {
+  .img_sunset {
     grid-area: sunset;
   }
 
-  .art__img__ice-cream {
+  .img_ice-cream {
     grid-area: ice-cream;
   }
 
-  .art__img__books {
+  .img_books {
     grid-area: books;
   }
 
-  .art__img__tape {
+  .img_tape {
     grid-area: tape;
   }
 
-  .art__img__street {
+  .img_street {
     grid-area: street;
   }
 }
 
 @media (min-width: 1024px) {
-  .art__img__tape {
+  .img_tape {
     max-block-size: calc(100% - 5px);
   }
 
-  .art__img__street {
+  .img_street {
     align-self: start;
     padding-block-start: 5px;
     max-block-size: calc(100% - 5px);

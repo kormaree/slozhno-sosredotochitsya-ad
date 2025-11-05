@@ -1,6 +1,6 @@
 :root .theme_light {
-  --text-color: #353430;
   --background: #FFF1F7 url("../images/cover-image-light.png") no-repeat center / cover;
+  --text-color: #353430;
   --accent-color: #FF0070;
   --accent-color-btn: #353430;
   --text-color-accent: #FFC2E6;
